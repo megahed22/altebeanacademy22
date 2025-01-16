@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>لوحة التحكم</h1>
+            <nav>
+                <a href="profile.html">الملف الشخصي</a>
+                <a href="payments.html">المدفوعات</a>
+                <a href="courses.html">الدورات</a>
+                <a href="logout.html">تسجيل الخروج</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>مرحبًا بك في الأكاديمية</h2>
+                <p>هنا يمكنك إدارة معلوماتك، الاطلاع على الدورات، والمدفوعات.</p>
+                <button onclick="loadData()">عرض البيانات</button>
+            </section>
+            <div id="dataDisplay" class="data-section"></div>
+        </main>
+    </div>
+    <script src="firebase.js" type="module"></script>
+    <script src="dashboard.js" type="module"></script>
+</body>
+
+</html>
